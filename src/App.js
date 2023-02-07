@@ -1,15 +1,13 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
 import Die from "./Die.js"
+import {nanoid} from "nanoid"
 
 function App(){
     
   const [dice, setDice] = React.useState(allNewDice())
   const [tenzies, setTenzies] = React.useState(false)
 
-  
-  const randomNum = Math.floor(Math.random() * 7)
-  const randomId = Math.random() * 1000
   
   
   React.useEffect(() => {
